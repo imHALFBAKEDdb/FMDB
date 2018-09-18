@@ -14,35 +14,6 @@
   height: 645px;
   font-family: Arial;
 }
-/* change color of hyperlinks to lighter grey */
-:local(.topHyperlinks) {
-  display: flex;
-  font-size: 13px;
-  flex-direction: row;
-  font: arial;
-  padding: 15px 20px 0 20px;
-  color: rgb(192, 192, 192);
-}
-
-:local(.hyperlinkColor) {
-  color: silver;
-}
-
-:local(.arrowIcon) {
-  height: 10px;
-  width: 10px;
-  padding-left: 2px;
-  padding-top: 1px;
-}
-:local(.more) {
-  display: flex;
-  flex-direction: row;
-}
-
-:local(.shareLink) {
-  padding-left: 80px;
-  color: silver;
-}
 
 :local(.mainTileHeading) {
   display: flex;
@@ -84,11 +55,11 @@
   padding-left: 5px;
 }
 
-:local(detailsLine) {
+/* :local(.detailsLine) {
   display: flex;
   flex-direction: row;
   font-size: 15px;
-}
+} */
 
 :local(.spacer) {
   color: rgb(192, 192, 192);

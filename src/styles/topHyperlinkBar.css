@@ -1,0 +1,27 @@
+.spacer {
+  composes: spacer from "./styles.css";
+}
+
+:local(.topHyperlinks) {
+  display: flex;
+  font-size: 13px;
+  flex-direction: row;
+  font: arial;
+  padding: 15px 20px 0 20px;
+}
+
+:local(.hyperlinkColor) {
+  color: silver;
+}
+
+:local(.arrowIcon) {
+  height: 10px;
+  width: 10px;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+
+:local(.shareLink) {
+  color: silver;
+  padding-left: 80px;
+}

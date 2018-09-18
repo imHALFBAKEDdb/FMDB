@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
-import styles from "../styles.css";
+import styles from "../styles/styles.css";
+import TopHyperlinkBar from "./TopHyperlinkBar.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -34,7 +35,10 @@ class App extends React.Component {
       return (
         <div>
           <div className={styles.container}>
-            <div className={styles.topHyperlinks}>
+            <div>
+              <TopHyperlinkBar />
+            </div>
+            {/* <div className={styles.topHyperlinks}>
               <a href="" className={styles.hyperlinkColor}>
                 FULL CAST AND CREW{" "}
               </a>
@@ -66,7 +70,7 @@ class App extends React.Component {
               <a className={styles.shareLink} href="">
                 SHARE
               </a>
-            </div>
+            </div> */}
 
             <div className={styles.mainTileHeading}>
               <div>
