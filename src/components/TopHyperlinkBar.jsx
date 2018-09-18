@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/topHyperlinkBar.css";
+import styles from "../styles/TopHyperlinkBar.css";
 
 const TopHyperlinkBar = props => {
   return (

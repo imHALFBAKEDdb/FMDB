@@ -1,0 +1,118 @@
+.spacer {
+  composes: spacer from "./styles.css";
+}
+
+:local(.mainTileHeading) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 667px;
+  height: 58px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+:local(.ribbon) {
+  display: flex;
+  padding-right: 5px;
+  padding-left: 15px;
+  background-color: #333;
+  border: none;
+}
+
+:local(.ribbonImg) {
+  height: 40px;
+  width: 40px;
+}
+
+:local(.titleAndDetails) {
+  display: flex;
+  flex-direction: column;
+}
+
+:local(.Title) {
+  color: white;
+  font-size: 36px;
+  padding-bottom: 3px;
+}
+:local(.releaseYear) {
+  color: silver;
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+:local(.detailsColor) {
+  color: rgb(220, 220, 220);
+  font-size: 11px;
+}
+
+:local(.ratingBox) {
+  width: 92px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+  padding-left: 140px;
+}
+
+:local(.starImg) {
+  height: 25px;
+  width: 25px;
+  padding-top: 10px;
+}
+
+:local(.reviewCounts) {
+  display: flex;
+  flex-direction: column;
+}
+
+:local(.review_average) {
+  color: white;
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+:local(.rateThis) {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+
+:local(.rateThisStar) {
+  height: 25px;
+  width: 25px;
+  padding-left: 5px;
+  padding-top: 3px;
+  color: white;
+}
+
+:local(.rateThisText) {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 13px;
+  padding-left: 3px;
+  padding-top: 1px;
+}
+
+:local(.reviewSpacer) {
+  background-color: grey;
+  width: 1px;
+  height: 40px;
+  display: flex;
+  margin-left: 10px;
+  padding-left: 1px;
+}
+
+:local(.outOfTen) {
+  color: #6b6b6b;
+  font-size: 10px;
+}
+
+:local(.totalReviews) {
+  color: silver;
+  font-size: 10px;
+  display: flex;
+  align-self: center;
+  padding-left: 5px;
+}

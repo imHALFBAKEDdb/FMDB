@@ -1,0 +1,21 @@
+/* add in theatres flag to state */
+:local(.howToWatch) {
+  height: 56px;
+  width: 667px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+}
+
+:local(.howToWatchText) {
+  padding-left: 10px;
+  color: #136cb2;
+  font: 16px Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 18px 20px;
+}
