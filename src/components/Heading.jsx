@@ -15,9 +15,10 @@ const Heading = props => {
       <div className={styles.titleAndDetails}>
         <div className={styles.Title}>
           {props.movie.Title}
-          <a className={styles.releaseYear}>
-            ({props.movie.release_date.slice(-4)})
-          </a>
+          <span className={styles.releaseYear}>
+            {" ("}
+            {props.movie.release_date.slice(-4)})
+          </span>
         </div>
         <div className={styles.detailsLine}>
           <a className={styles.detailsColor}> {props.movie.movie_rating}</a>

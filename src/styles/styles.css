@@ -19,3 +19,7 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+:local(.buffer) {
+  margin-bottom: 100px;
+}

@@ -5,11 +5,11 @@ const MovieImages = props => {
   return (
     <div className={styles.images}>
       <div className={styles.Poster}>
-        <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg" />
+        <img src={props.movie.Poster} />
       </div>
       <div className={styles.imageSpacer} />
       <div className={styles.secondImage}>
-        <img src="https://gifer.com/i/3hmW.gif" />
+        <img src={props.movie.extra_images} />
       </div>
     </div>
   );

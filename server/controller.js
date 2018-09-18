@@ -2,9 +2,9 @@ var Movies = require("../database/database.js");
 
 module.exports = {
   get: (req, res) => {
+    // console.log(req);
     title = req.body;
-    Movies.find({})
-      .limit(1)
+    Movies.find({ movie_id: req.params.id })
       .then(data => {
         res.send(data);
       })

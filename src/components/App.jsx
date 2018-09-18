@@ -20,14 +20,15 @@ class App extends React.Component {
   }
 
   retrieveMovieData() {
+    var random = Math.floor(Math.random() * 119);
     axios
-      .get("/api/title")
+      .get(`/api/title/${random}`)
       .then(res => {
-        //console.log(res.data);
+        console.log(random);
         this.setState({
           movie: res.data[0]
         });
-        console.log("movie data retrieved", this.state.movie);
+        console.log("movie data retrieved", res.data);
       })
       .catch(err => {
         console.log("there was an error retrieving data", err);
@@ -40,8 +41,8 @@ class App extends React.Component {
         <div className={styles.container}>
           <div>
             <TopHyperlinkBar />
-            <Heading movie={this.state.movie} />
-            <MovieImages />
+            <Heading className={styles.buffer} movie={this.state.movie} />
+            <MovieImages movie={this.state.movie} />
             <HowToWatch />
             <BottomTextArea movie={this.state.movie} />
           </div>
