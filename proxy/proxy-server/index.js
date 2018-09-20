@@ -7,7 +7,6 @@ const PORT = 8000;
 
 const app = express();
 
-app.use(cors());
 app.use(body.urlencoded({ extended: true }));
 app.use(body.json());
 app.use(express.static(path.resolve(__dirname, "../dist")));
