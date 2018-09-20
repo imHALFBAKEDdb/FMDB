@@ -22,7 +22,7 @@ class App extends React.Component {
   retrieveMovieData() {
     var random = Math.floor(Math.random() * 119);
     axios
-      .get(`/api/title/${random}`)
+      .get(`http://localhost:8000/api/title/${random}`)
       .then(res => {
         console.log(random);
         this.setState({
