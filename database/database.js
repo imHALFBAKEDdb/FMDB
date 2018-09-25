@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-var mongoUri = "mongodb://localhost:27017/movies";
+var mongoUri = "mongodb://mongo:27017/test";
 // var addDataToDatabase = require("./helperFunctions.js").addDataToDatabase;
 var movieData = require("./movieData.js");
 
@@ -88,8 +88,6 @@ db.once("open", () => {
   var dbAdded = false;
 
   console.log("succesfully connected to db");
-
-  addDataToDatabase(movieData);
 });
 
 module.exports = Movies;

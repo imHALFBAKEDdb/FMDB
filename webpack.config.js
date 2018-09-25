@@ -37,6 +37,9 @@ var config = {
     publicPath: "/",
     filename: "bundleMain.js"
   },
+  resolve: {
+    extensions: [".js", ".jsx", ".css"]
+  },
   plugins: [new ExtractTextPlugin("stylesMain.css")]
 };
 
