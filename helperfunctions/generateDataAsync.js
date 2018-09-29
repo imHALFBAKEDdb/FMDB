@@ -1,6 +1,6 @@
 var faker = require("faker");
 var fs = require("fs");
-const writer = fs.createWriteStream("data.json");
+const writer = fs.createWriteStream("dataASYNC.json");
 const thetimeisnow = require('performance-now')
 
 var randomMovieLength = () => {
@@ -61,7 +61,7 @@ var obj =  {
   movie_id:""
 }
 
-var dataGenerator = () => {
+var generate1M = (j) => {
   obj.Title = faker.commerce.productName();
   obj.Year = faker.date.past();
   obj.imdbID = randomYear();
@@ -109,14 +109,3 @@ function write() {
     writer.once("drain", write);
   }
 }
-
-
-    // setTimeout(() => {
-    //   generate1Mdata(++j)
-    // }, 500);
-    //console.log('finished in' + (thetimeisnow() - t0)/1000 + 'milliseconds');
-
-
-
-
-
