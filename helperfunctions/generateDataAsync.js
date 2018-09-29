@@ -61,51 +61,43 @@ var obj =  {
   movie_id:""
 }
 
-var generate1M = (j) => {
-  obj.Title = faker.commerce.productName();
-  obj.Year = faker.date.past();
-  obj.imdbID = randomYear();
-  obj.Type = "tt" + faker.random.number();
-  obj.Poster = faker.image.people();
-  obj.review_average = Math.floor(Math.random() * 5 + 1);
-  obj.review_count = faker.random.number();
-  obj.extra_images = faker.image.animals();
-  obj.director = faker.name.findName();
-  obj.writer = faker.name.findName();
-  obj.release_date = faker.date.past();
-  obj.movie_length = randomMovieLength();
-  obj.actor_info = randomActorInfo(); 
-  obj.movie_genre = faker.lorem.word(); 
-  obj.review_date = faker.date.past();
-  obj.reviewer = faker.name.findName();
-  obj.review_title = faker.random.word(); 
-  obj.reviews_number = faker.random.number();
-  obj.review_viewers = faker.random.number();
-  obj.review = faker.lorem.paragraph();
-  obj.movie_description = faker.lorem.words();
-  obj.movie_id = faker.random.number();
-  return obj;
-}
-
-
 var t0 = thetimeisnow();
-
-let i = 0;
-write();
-function write() {
-  let ok = true;
-  do {
-    i++;
-    if(i === 10000000) {
-      writer.write(JSON.stringify(dataGenerator()), "utf8", () => {
-        console.log("created data entry", i);
-        console.log((thetimeisnow() - t0)/1000);
-      });
-    } else {
-      ok = writer.write(JSON.stringify(dataGenerator()), "utf8");
-    }
-  } while(i < 10000000 && ok);
-  if(i < 10000000) {
-    writer.once("drain", write);
+var generate1M = (j) => {
+  if(j === 100) {
+    return;
   }
+  for(let i = 0; i < 100000; i++) {
+    obj.Title = faker.commerce.productName();
+    obj.Year = faker.date.past();
+    obj.imdbID = randomYear();
+    obj.Type = "tt" + faker.random.number();
+    obj.Poster = faker.image.people();
+    obj.review_average = Math.floor(Math.random() * 5 + 1);
+    obj.review_count = faker.random.number();
+    obj.extra_images = faker.image.animals();
+    obj.director = faker.name.findName();
+    obj.writer = faker.name.findName();
+    obj.release_date = faker.date.past();
+    obj.movie_length = randomMovieLength();
+    obj.actor_info = randomActorInfo(); 
+    obj.movie_genre = faker.lorem.word(); 
+    obj.review_date = faker.date.past();
+    obj.reviewer = faker.name.findName();
+    obj.review_title = faker.random.word(); 
+    obj.reviews_number = faker.random.number();
+    obj.review_viewers = faker.random.number();
+    obj.review = faker.lorem.paragraph();
+    obj.movie_description = faker.lorem.words();
+    obj.movie_id = faker.random.number();
+    writer.write(JSON.stringify(obj));
+    
+  }
+
+  setTimeout(() => {
+    generate1M(++j)
+  }, 0)
+  console.log(j)
+  console.log('finished in ' + (thetimeisnow() - t0)/1000 + ' seconds')
 }
+
+generate1M(0)
