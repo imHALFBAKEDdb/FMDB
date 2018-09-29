@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var mongoUri = "mongodb://localhost:27017/test";
 // var addDataToDatabase = require("./helperFunctions.js").addDataToDatabase;
-var movieData = require("./movieData.js");
+var movieData = require("../movieData.js");
 
 mongoose.connect(
   mongoUri,

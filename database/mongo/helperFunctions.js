@@ -1,5 +1,5 @@
 var Movies = require("./database.js");
-var myData = require("./movieData.js");
+var myData = require("../movieData.js");
 var mongoose = require("mongoose");
 
 // var myData = JSON.stringify(myData);
