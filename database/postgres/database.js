@@ -1,37 +1,42 @@
 const Sequelize = require("sequelize");
+const pg = require("pg")
 const connection = new Sequelize("moviedata", "postgres", "", {
   host: "localhost",
-  dialect: "postgres",
-  port: 5432
+  port: 5432,
+  dialect: "postgres"
 });
 
 connection
   .authenticate()
-  .then(() => console.log("Successfully conneted to the database"))
-  .catch(err => console.log("Error connecting to the database", err));
+  .then(() => console.log("Successfully connected to the postgres database"))
+  .catch(err => console.log("Error connecting to the database postgres", err));
 
 
 const MovieList = connection.define(
   "movies",
   {
+    id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true
+    },
     Title: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(100),
       allowNull: false
     },
     Year: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(50),
       allowNull: false
     },
     imdbID: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(20),
       allowNull: false
     },
     Type: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(20),
       allowNull: false
     },
     Poster: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(500),
       allowNull: false
     },
     review_average: {
@@ -39,27 +44,27 @@ const MovieList = connection.define(
       allowNull: false
     },
     review_count: {
-      type: Sequelize.SMALLINT,
+      type: Sequelize.INTEGER,
       allowNull: false
     },
     extra_images: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(500),
       allowNull: false
     },
     director: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(100),
       allowNull: false
     },
     writer: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(100),
       allowNull: false
     },
     release_date: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(50),
       allowNull: false
     },
     movie_length: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(50),
       allowNull: false
     },
     actor_info: {
@@ -67,11 +72,11 @@ const MovieList = connection.define(
       allowNull: false
     },
     movie_genre:  {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(50),
       allowNull: false
     },
     review_date: {
-      type: Sequezlize.TEXT,
+      type: Sequelize.STRING(50),
       allowNull: false
     },
     reviewer: {
@@ -83,15 +88,15 @@ const MovieList = connection.define(
       allowNull: false
     },
     reviews_number: {
-      type: Sequelize.SMALLINT,
+      type: Sequelize.INTEGER,
       allowNull: false
     },
     review_viewers: {
-      type: Sequelize.SMALLINT,
+      type: Sequelize.INTEGER,
       allowNull: false
     },
     review: {
-      type: Sequelize.TEXT,
+      type: Sequelize.STRING(2000),
       allowNull: false
     },
     movie_description: {
@@ -99,10 +104,19 @@ const MovieList = connection.define(
       allowNull: false
     },
     movie_id: {
-      type: Sequelize.SMALLINT,
+      type: Sequelize.INTEGER,
       allowNull: false
+    },
+    created_at: {
+      type: Sequelize.DATE,
+      allowNull: true
+    },
+    updated_at: {
+      type: Sequelize.DATE,
+      allowNull: true
     }
-  }
+  },
+  { timestamps: false }
 )
 
 connection.sync({force: false});

@@ -23,6 +23,125 @@ a {
 .nGnqrakq2FcFPNOwAAI4I {
   margin-bottom: 100px;
 }
+._2XNWKqUaB3e4N5JOlByVWg {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 270px;
+}
+
+._32Qg-TUZMnqbXVA2zXH2bM {
+  display: flex;
+  max-width: 182px;
+  max-height: 270px;
+}
+
+._2wuN618cU7z5BV-bo8hC54 {
+  width: 10px;
+}
+
+._5nRv90KkDJPz5MCqP1FX7 {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+/* add in theatres flag to state */
+._1zg90DFG_uFFnp12X88TP2 {
+  height: 56px;
+  width: 667px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+}
+
+._1FYd9WBLK7MrawcrdWTc9q {
+  padding-left: 10px;
+  color: #136cb2;
+  font: 16px Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 18px 20px;
+}
+._38qX1HlzBmCSR4ZCPaLaW- {
+  background-color: #f6f6f6;
+  display: flex;
+  width: 649px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+}
+
+.WqE3Ox_D0lsIhzpM2kC04 {
+  padding-bottom: 16px;
+
+  line-height: 18px;
+  color: #333;
+  font-size: 13px;
+}
+
+._6hVVSboPtzHkyUHOVObW7 {
+  height: 10px;
+  width: 10px;
+}
+
+._2ClwWe8njQNQIejXAgDXX2 {
+  color: #666666;
+  font-size: 13px;
+  margin: 0.35em 0 0.25em;
+  font-weight: bold;
+}
+
+._3_8_tohgTPyrQuOexECIXu {
+  color: #136cb2;
+
+  font-size: 13px;
+  font-weight: normal;
+}
+
+._2IFW5s_0OZznL4Egei2pY8 {
+  width: 250px;
+  height: 42px;
+  padding-left: 17px;
+  background-color: #0091ea;
+  border-radius: 2px;
+  margin-top: 9px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+._1dGCF3pfE5qqyQLoZQPIKd {
+  background-size: 8px;
+  background-position-y: 4px;
+  color: white;
+  text-align: center;
+  height: 16px;
+  width: 230px;
+
+  font-size: 13px;
+}
+
+._3eCC4XBJounaDrTF8dxJgF {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+
+  color: #333;
+  font-size: 13px;
+}
+
+.e7I2yiTQytx_LqY5W20W1 {
+  color: #136cb2;
+  font-size: 11px;
+}
 .GRRVeOqcBwmsYeXgpg-PL {
 }
 
@@ -171,123 +290,4 @@ a {
   display: flex;
   align-self: center;
   padding-left: 5px;
-}
-._2XNWKqUaB3e4N5JOlByVWg {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: 270px;
-}
-
-._32Qg-TUZMnqbXVA2zXH2bM {
-  display: flex;
-  max-width: 182px;
-  max-height: 270px;
-}
-
-._2wuN618cU7z5BV-bo8hC54 {
-  width: 10px;
-}
-
-._5nRv90KkDJPz5MCqP1FX7 {
-  display: flex;
-
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-/* add in theatres flag to state */
-._1zg90DFG_uFFnp12X88TP2 {
-  height: 56px;
-  width: 667px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f6f6f6;
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: grey;
-}
-
-._1FYd9WBLK7MrawcrdWTc9q {
-  padding-left: 10px;
-  color: #136cb2;
-  font: 16px Arial, sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  padding: 18px 20px;
-}
-._38qX1HlzBmCSR4ZCPaLaW- {
-  background-color: #f6f6f6;
-  display: flex;
-  width: 649px;
-  height: 170px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 18px;
-}
-
-.WqE3Ox_D0lsIhzpM2kC04 {
-  padding-bottom: 16px;
-
-  line-height: 18px;
-  color: #333;
-  font-size: 13px;
-}
-
-._6hVVSboPtzHkyUHOVObW7 {
-  height: 10px;
-  width: 10px;
-}
-
-._2ClwWe8njQNQIejXAgDXX2 {
-  color: #666666;
-  font-size: 13px;
-  margin: 0.35em 0 0.25em;
-  font-weight: bold;
-}
-
-._3_8_tohgTPyrQuOexECIXu {
-  color: #136cb2;
-
-  font-size: 13px;
-  font-weight: normal;
-}
-
-._2IFW5s_0OZznL4Egei2pY8 {
-  width: 250px;
-  height: 42px;
-  padding-left: 17px;
-  background-color: #0091ea;
-  border-radius: 2px;
-  margin-top: 9px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-._1dGCF3pfE5qqyQLoZQPIKd {
-  background-size: 8px;
-  background-position-y: 4px;
-  color: white;
-  text-align: center;
-  height: 16px;
-  width: 230px;
-
-  font-size: 13px;
-}
-
-._3eCC4XBJounaDrTF8dxJgF {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-
-  color: #333;
-  font-size: 13px;
-}
-
-.e7I2yiTQytx_LqY5W20W1 {
-  color: #136cb2;
-  font-size: 11px;
 }

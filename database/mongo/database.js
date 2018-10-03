@@ -87,7 +87,7 @@ var Movies = mongoose.model("Movies", movieSchema);
 db.once("open", () => {
   var dbAdded = false;
 
-  console.log("succesfully connected to db");
+  console.log("succesfully connected to mongo db");
 });
 
 module.exports = Movies;

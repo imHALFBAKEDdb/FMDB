@@ -1,4 +1,5 @@
 var Movies = require("../database/mongo/database.js");
+//var Movies = require("../database/mongo/database.js")
 
 module.exports = {
   get: (req, res) => {
