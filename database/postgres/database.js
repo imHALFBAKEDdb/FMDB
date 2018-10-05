@@ -15,15 +15,11 @@ connection
 const MovieList = connection.define(
   "movies",
   {
-    id: {
-      type: Sequelize.INTEGER,
-      primaryKey: true
-    },
-    Title: {
+    title: {
       type: Sequelize.STRING(100),
       allowNull: false
     },
-    Year: {
+    year: {
       type: Sequelize.STRING(50),
       allowNull: false
     },
@@ -31,11 +27,11 @@ const MovieList = connection.define(
       type: Sequelize.STRING(20),
       allowNull: false
     },
-    Type: {
+    type: {
       type: Sequelize.STRING(20),
       allowNull: false
     },
-    Poster: {
+    poster: {
       type: Sequelize.STRING(500),
       allowNull: false
     },
@@ -105,7 +101,8 @@ const MovieList = connection.define(
     },
     movie_id: {
       type: Sequelize.INTEGER,
-      allowNull: false
+      allowNull: false,
+      primaryKey: true
     },
     created_at: {
       type: Sequelize.DATE,

@@ -24,9 +24,9 @@ const BottomTextArea = props => {
           Stars:
           <a className={styles.detailsBody} href="">
             {" "}
-            {props.movie.actor_info.map((actor, key) => {
+            {/* {props.movie.actor_info.map((actor, key) => {
               return <span key={key}>{actor.actor_name + ", "}</span>;
-            })}
+            })} */}
             {"  |  "} See Full Cast & Crew{" "}
             <img
               className={styles.rightArrows}

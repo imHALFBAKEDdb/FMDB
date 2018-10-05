@@ -1,11 +1,12 @@
 :local(.images) {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  width: 182px;
   height: 270px;
 }
 
-:local(.Poster) {
+:local(.poster) {
   display: flex;
   max-width: 182px;
   max-height: 270px;

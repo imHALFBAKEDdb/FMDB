@@ -6,11 +6,11 @@ var insertAllMovies = function(req, res) {
   movies.forEach(movie => {
     db.MovieList.create({
       id: movie.id,
-      Title: movie.Title,
-      Year: movie.Year,
+      title: movie.title,
+      year: movie.year,
       imdbID: movie.imdbID,
-      Type: movie.Type,
-      Poster: movie.Poster,
+      type: movie.type,
+      poster: movie.poster,
       review_average: movie.review_average,
       review_count: movie.review_count,
       extra_images: movie.extra_images,

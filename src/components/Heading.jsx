@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Heading.css";
 
 const Heading = props => {
+  console.log('this is props', props)
   return (
     <div className={styles.mainTileHeading}>
       <div>
@@ -13,7 +14,7 @@ const Heading = props => {
         </button>
       </div>
       <div className={styles.titleAndDetails}>
-        <div className={styles.Title}>
+        <div className={styles.title}>
           {props.movie.Title}
           <span className={styles.releaseYear}>
             {" ("}

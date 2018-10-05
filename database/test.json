@@ -1,0 +1,18 @@
+{
+  "config": {
+    "target": "http://localhost:8000/",
+    "phases": [
+      {
+        "duration": 100,
+        "arrivalRate": 2
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "flow": [
+        {"get": {"url": "/"}}
+      ]
+    }
+  ]
+}

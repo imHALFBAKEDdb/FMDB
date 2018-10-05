@@ -3,10 +3,7 @@ const express = require("express");
 const router = require("./routes");
 const path = require("path");
 const cors = require("cors");
-//postgres
 const PORT = 8000;
-//mongo
-//const PORT = 8000;
 
 const app = express();
 

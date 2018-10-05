@@ -20,7 +20,7 @@ class App extends React.Component {
   }
 
   retrieveMovieData() {
-    var random = Math.floor(Math.random() * 119);
+    var random = Math.floor(Math.random() * 10000000);
     axios
       .get(`http://localhost:8000/api/title/${random}`)
       .then(res => {

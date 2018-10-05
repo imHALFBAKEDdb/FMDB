@@ -16,11 +16,11 @@ db.on("error", () => {
 
 var movieSchema = new mongoose.Schema(
   {
-    Title: String,
-    Year: String,
+    title: String,
+    year: String,
     imdbID: String,
-    Type: String,
-    Poster: String,
+    type: String,
+    poster: String,
     review_average: Number,
     review_count: Number,
     extra_images: String,
