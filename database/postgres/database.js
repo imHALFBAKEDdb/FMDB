@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const pg = require("pg")
+
 const connection = new Sequelize("moviedata", "postgres", "", {
   host: "localhost",
   port: 5432,
