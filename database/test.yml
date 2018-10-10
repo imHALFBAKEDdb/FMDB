@@ -1,0 +1,20 @@
+config:
+  target: "http://localhost:8000"
+  http:
+    pool: 4
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  variables:
+    movieIds:
+      - [1, 9999999, 3333333, 54321, 567890]
+      - [234567, 777777, 357890, 100, 9087663]
+  defaults:
+    headers:
+      x-my-service-auth: "987401838271002188298567"
+scenarios:
+  - flow:
+      - loop:
+          - get:
+              url: "/api/title/{{ $movieIds }}"
+        count: 100
